@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Variable Calculus Study Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>MIT 18.01SC Single Variable Calculus</h1>
+        <p>Content Organized by Session Topics</p>
+    </header>
+
+    <nav class="main-nav">
+        <button class="nav-btn active" data-section="part-a">Part A: Definition and Basic Rules</button>
+        <button class="nav-btn" data-section="part-b">Part B: Implicit Differentiation and Inverse Functions</button>
+    </nav>
+
+    <main>
+        <!-- Part A Content -->
+        <section id="part-a" class="content-section active">
+            <h2>Part A: Definition and Basic Rules</h2>
+            
+            <div class="session-list">
+                <div class="session-card" data-session="1">
+                    <h3>Session 1: Introduction to Derivatives</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Definition of the Derivative</strong> - Complete worked example of $f(x) = \frac{1}{1+x^2}$ using the limit definition</p>
+                        
+                        <h4>Key Concepts:</h4>
+                        <ul>
+                            <li>Derivative as limit of difference quotient: $f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}$</li>
+                            <li>Geometric interpretation as slope of tangent line</li>
+                            <li>Even functions have odd derivatives</li>
+                        </ul>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li><strong>Exercise 1:</strong> Secants and Tangents - Interactive exploration using $f(x) = 0.5x^3 - x$</li>
+                            <li>Problem Set 1, Section 1C: Slope and derivative calculations from definition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="2">
+                    <h3>Session 2: Examples of Derivatives</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Exercise 2: Computing basic derivatives</li>
+                            <li>Exercise 3: Rate of change applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="3">
+                    <h3>Session 3: Derivative as Rate of Change</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Lecture 2</strong> - Applications of derivatives as rates of change</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Velocity and rates of change problems from Problem Set 1</li>
+                            <li>Physics applications (falling objects, tennis ball bounces)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="4">
+                    <h3>Session 4: Limits and Continuity</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Lecture 3</strong> - Limits and continuity concepts</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Exercises 4-5: Limit calculations</li>
+                            <li>Continuity and discontinuity problems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="5">
+                    <h3>Session 5: Discontinuity</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Identifying types of discontinuities</li>
+                            <li>Piecewise function continuity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="6">
+                    <h3>Session 6: Calculating Derivatives</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Exercises 7-9: Basic differentiation formulas</li>
+                            <li>Polynomial derivatives</li>
+                            <li>Rational function derivatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="7">
+                    <h3>Session 7: Derivatives of Sine and Cosine</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Derivatives of Sine and Cosine</strong> - Proof and applications</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Trigonometric derivative problems</li>
+                            <li>Applications to oscillatory motion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="8">
+                    <h3>Session 8: Limits of Sine and Cosine</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Lecture 4</strong> - Important trigonometric limits</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Trigonometric limit exercises</li>
+                            <li>Squeeze theorem applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="9">
+                    <h3>Session 9: Product Rule</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Constant Multiple Rule</strong> - Building toward product rule</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Product rule applications</li>
+                            <li>Exercises involving products of functions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="10">
+                    <h3>Session 10: Quotient Rule</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Exercise 10: Quotient Rule Practice</li>
+                            <li>Rational function derivatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="11">
+                    <h3>Session 11: Chain Rule</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Chain Rule</strong> - Comprehensive explanation and examples</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Composite function derivatives</li>
+                            <li>Chain rule applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="12">
+                    <h3>Session 12: Higher Derivatives</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Second and higher derivatives</li>
+                            <li>Applications to physics (acceleration)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card problem-set" data-session="ps1">
+                    <h3>Problem Set 1</h3>
+                    <div class="content-group">
+                        <h4>Comprehensive Problems:</h4>
+                        <ul>
+                            <li>1A: Graphing functions and derivatives</li>
+                            <li>1B: Velocity and rates of change</li>
+                            <li>1C: Slope and derivative calculations</li>
+                            <li>1D: Limits and continuity</li>
+                            <li>1E: Differentiation formulas (polynomials, products, quotients)</li>
+                            <li>1F: Chain rule and implicit differentiation</li>
+                            <li>1G: Higher derivatives</li>
+                            <li>1H: Exponentials and logarithms (algebra)</li>
+                            <li>1I: Exponentials and logarithms (calculus)</li>
+                            <li>1J: Trigonometric functions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part B Content -->
+        <section id="part-b" class="content-section">
+            <h2>Part B: Implicit Differentiation and Inverse Functions</h2>
+            
+            <div class="session-list">
+                <div class="session-card" data-session="13">
+                    <h3>Session 13: Implicit Differentiation</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Implicit Differentiation</strong> - Complete example: Find slope of tangent to $y^3 + x^3 = 3xy$ at point $(4/3, 2/3)$</p>
+                        
+                        <h4>Key Concepts:</h4>
+                        <ul>
+                            <li>Chain rule applied to implicitly defined functions</li>
+                            <li>Product rule for terms like $3xy$</li>
+                            <li>Solving linear equations in $\frac{dy}{dx}$</li>
+                            <li>Result: $\frac{dy}{dx} = \frac{y - x^2}{y^2 - x}$</li>
+                        </ul>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Problem Set 1, Section 1F: Chain rule and implicit differentiation</li>
+                            <li>Finding tangent lines to curves defined implicitly</li>
+                            <li>Applications to related rates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="14">
+                    <h3>Session 14: Examples of Implicit Differentiation</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Advanced implicit differentiation problems</li>
+                            <li>Finding tangent lines to implicit curves</li>
+                            <li>Related rates problems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="15">
+                    <h3>Session 15: Implicit Differentiation and Inverse Functions</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Arccos Function</strong> - Inverse trigonometric functions</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Derivatives of inverse functions</li>
+                            <li>Relationship between function and inverse derivatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="16">
+                    <h3>Session 16: The Derivative of a^x</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>1H: Exponential function derivatives</li>
+                            <li>General exponential functions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="17">
+                    <h3>Session 17: The Exponential Function, its Derivative, and its Inverse</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>1I: Natural exponential function calculus</li>
+                            <li>Natural logarithm as inverse</li>
+                            <li>Applications to growth and decay</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="18">
+                    <h3>Session 18: Derivatives of other Exponential Functions</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Exponential functions with different bases</li>
+                            <li>Logarithmic differentiation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="19">
+                    <h3>Session 19: An Interesting Limit Involving e</h3>
+                    <div class="content-group">
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>1I-3, 1I-4: Limit definition of e</li>
+                            <li>1I-5: Compound interest applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card" data-session="20">
+                    <h3>Session 20: Hyperbolic Trig Functions</h3>
+                    <div class="content-group">
+                        <h4>Video Content:</h4>
+                        <p><strong>Hyperbolic Trig Functions</strong> - Definition and differentiation</p>
+                        
+                        <h4>Related Problems:</h4>
+                        <ul>
+                            <li>Exercise 20: Hyperbolic Angle Sum Formula</li>
+                            <li>Hyperbolic function derivatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="session-card problem-set" data-session="ps2">
+                    <h3>Problem Set 2</h3>
+                    <div class="content-group">
+                        <h4>Advanced Problems:</h4>
+                        <ul>
+                            <li>Implicit differentiation applications</li>
+                            <li>Inverse function problems</li>
+                            <li>Exponential and logarithmic functions</li>
+                            <li>Advanced chain rule applications</li>
+                            <li>Hyperbolic functions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Session Content -->
+    <div id="session-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Session Title</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content-area">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Based on MIT OpenCourseWare 18.01SC Single Variable Calculus</p>
+        <p><a href="http://ocw.mit.edu/terms" target="_blank">Terms of Use</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
